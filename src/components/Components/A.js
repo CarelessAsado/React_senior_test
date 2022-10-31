@@ -9,9 +9,9 @@ export const A = ({ values }) => {
           href={ values.href}
           rel="noopener noreferrer"
           target="_blank"
-          label={ values.label} 
+          
         >
-          Click me!
+          { values.label} 
         </a>
       </div>
     
