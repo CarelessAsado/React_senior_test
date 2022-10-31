@@ -10,6 +10,7 @@ export const componentsSlice = createSlice({
   initialState,
   reducers: {
     addComponent: (state, action) => {
+      console.log(state)
       state.currentlyEdited = action.payload.layout
       state.items= state.items.push(action.payload)
     },
