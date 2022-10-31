@@ -11,8 +11,12 @@ export const componentsSlice = createSlice({
   reducers: {
     addComponent: (state, action) => {
       console.log(state)
-      state.currentlyEdited = action.payload.layout
-      state.items= state.items.push(action.payload)
+      const transitory = {
+          ...action.payload,
+          values:{},
+        }
+      state.currentlyEdited = transitory
+      state.items= state.items.push(transitory)
     },
     updateComponent: (state, action) => {
     },
