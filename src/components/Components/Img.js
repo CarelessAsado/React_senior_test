@@ -1,3 +1,3 @@
-export const Img = ({alt,src}) => {
-    return <img src={src} alt={alt} />
+export const Img = ({values}) => {
+    return <img src={values.src} alt={values.alt} />
 }
