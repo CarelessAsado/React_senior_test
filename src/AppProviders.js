@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { getStore } from './store';
 
 export const AppProviders = ({ children }) => (
-  <Provider store={getStore}>
+  <Provider store={getStore()}>
     { children }
   </Provider>
 );
