@@ -10,7 +10,7 @@ export const componentsSlice = createSlice({
   initialState,
   reducers: {
     addComponent: (state, action) => {
-      console.log(state)
+
       const transitory = {
           ...action.payload,
           values:{},
