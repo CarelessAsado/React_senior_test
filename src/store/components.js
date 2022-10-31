@@ -19,6 +19,14 @@ export const componentsSlice = createSlice({
       state.items= state.items.push(transitory)
     },
     updateComponent: (state, action) => {
+      
+      
+      /*{
+        id: "e00ce72c-2018-4485-a644-f1176287ab86",
+        data: {
+          values: { text: "Some Different Header" },
+        }*/
+      state.items = state.items.map(i=>i.id===action.payload.id?{...i,...action.payload.data}:i)
     },
     removeComponent: (state, action) => {
     },
