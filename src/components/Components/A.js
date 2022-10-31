@@ -4,7 +4,8 @@ export const A = ({ values }) => {
 
   return (
 
-          <div>
+        
+    
         <a
           href={ values.href}
           rel="noopener noreferrer"
@@ -13,7 +14,7 @@ export const A = ({ values }) => {
         >
           { values.label} 
         </a>
-      </div>
+  
     
   );
 
