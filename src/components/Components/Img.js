@@ -1,1 +1,3 @@
-export const Img = () => {}
+export const Img = () => {
+    return null
+}
