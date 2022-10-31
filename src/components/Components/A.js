@@ -1,9 +1,9 @@
-export const A = ({ label , href }) => {
+export const A = ({ values }) => {
     
     
 
   return (
-    <a label={label} href={href}>
+    <a label={ values.label} href={ values.href}>
       link somewhere
     </a>
   );
